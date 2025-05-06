@@ -48,7 +48,7 @@ Navigate to frontend and backend folders separately and install dependencies:
 bash
 
 # For Frontend
-cd frontend
+cd front
 npm install
 
 # For Backend
@@ -69,10 +69,10 @@ cd backend
 npm start
 
 # Frontend (in a new terminal)
-cd frontend
+cd front
 npm run dev
 
-📈 Features Implemented
+# Features Implemented
 Authentication: User signup and login secured with hashed passwords.
 
 Task CRUD: Create, edit, delete, and view tasks.
@@ -83,7 +83,7 @@ Dashboard: Separate views for assigned, created, and overdue tasks.
 
 Search and Filter: Dynamic search by title/description; filter by priority, status, and due date.
 
-🧹 Code and Project Quality
+# Code and Project Quality
 Clear and meaningful Git commit history.
 
 Follows secure coding practices for authentication and input validation.
@@ -92,17 +92,17 @@ Organized and modular codebase for easy scalability.
 
 Responsive UI/UX design.
 
-⚙️ Deployment
+⚙# Deployment
 Frontend deployed on Vercel.
 
 Backend deployed on Vercel Render.
 
-📄 License
+# License
 This project is licensed under the MIT License.
 
-📌 Note
+# Note
 This project was built individually to cover all requirements.
 Special attention was given to security, user experience, and handling edge cases.
 
-✨ Author
+# Author
 Rahul Yadav — GitHub Profile
