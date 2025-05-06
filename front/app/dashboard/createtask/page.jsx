@@ -1,9 +1,11 @@
-"use client";
+'use client';
 import React, { useEffect, useState } from "react";
+import { Suspense } from 'react';
 import axios from "axios";
 import { useRouter, useSearchParams } from "next/navigation";
 
-const CreateTask = () => {
+
+function CreateTaskContent() {
   const [formData, setFormData] = useState({
     title: "",
     description: "",
@@ -148,7 +150,7 @@ const CreateTask = () => {
         notificationMessage = `Task "${formData.title}" assigned to ${assignedUser?.name}${assignedUser?._id === userId ? " (You)" : ""}`;
       }
       setNotifications((prev) => [...prev, notificationMessage]);
-      
+
       // Auto-hide notification after 5 seconds
       setTimeout(() => {
         setNotifications((prev) => prev.slice(1));
@@ -306,6 +308,13 @@ const CreateTask = () => {
       </section>
     </div>
   );
-};
+}
 
-export default CreateTask;
+
+export default function CreateTask() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <CreateTaskContent />
+    </Suspense>
+  );
+}
