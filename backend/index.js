@@ -7,7 +7,7 @@ const taskRoutes = require('./routes/taskRoutes');
 const app = express();
 
 app.use(cors({
-    origin:"http://localhost:3000",
+    origin:"https://task-management-drab-nine.vercel.app",
     credentials:true,
 }));
 
