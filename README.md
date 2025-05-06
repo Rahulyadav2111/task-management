@@ -48,7 +48,7 @@ Navigate to frontend and backend folders separately and install dependencies:
 bash
 
 # For Frontend
-cd frontend
+cd front
 npm install
 
 # For Backend
@@ -69,7 +69,7 @@ cd backend
 npm start
 
 # Frontend (in a new terminal)
-cd frontend
+cd front
 npm run dev
 
 📈 Features Implemented
